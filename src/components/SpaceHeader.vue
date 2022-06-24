@@ -13,8 +13,8 @@ export default defineComponent({
     return {
         slides: {
             newGrad: "👩🏽‍🎓New Grad!",
-            statistician: "📈Statistician",
             computerScientist: "💻Computer Scientist",
+            statistician: "📈Statistician",
             softwareEngineer: "⌨️Software Engineer",
             webDeveloper: "👩🏽‍💻Web Developer",
             dataScientist: "📊Data Scientist",
