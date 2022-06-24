@@ -4,7 +4,7 @@
 <template>
     <main class="main">
         <section class="slide" id="tab-resume">
-            <iframe src="https://drive.google.com/file/d/1qvhnwfCsw8gfo8__ilTJKhEG5WbPZTQT/preview" width="640" height="480" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1mzODkzTdz_HydMdlZSKzA5iIzLG0nL9U/preview" width="640" height="480" allow="autoplay"></iframe>
         </section>
     </main>
 </template>
