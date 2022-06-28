@@ -19,13 +19,12 @@ export default defineComponent({
   },
   data: () => {
     return {
-      windowWidth: null,
-      windowHeight: null,
-      isMobile: null
+      windowWidth: 0,
+      windowHeight: 0,
+      isMobile: false
     }
   },
   created() {
-    console.log("created");
     window.addEventListener('resize', this.checkScreen()); 
     this.checkScreen();  
   }, 
