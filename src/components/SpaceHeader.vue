@@ -25,6 +25,23 @@ export default defineComponent({
 </script>
 
 <template>
+    <div class="space-header">
+        <Transition appear name="fade">
+            <h1>HI, UNIVERSE!</h1>
+        </Transition> 
+        <Transition appear name="intro-fade">
+            <span class="roles">
+                <div class="intro">I am Sandhya Veludandi, and a</div>
+            </span>
+        </Transition>
+        <Transition appear name="role-fade">
+            <Carousel :autoplay="2000" :wrap-around="true">
+                <Slide v-for="slide in slides" :key="slide" class="slides">
+                    {{ slide }}
+                </Slide>
+            </Carousel>
+        </Transition>
+    </div> 
     <Particles 
     id="particles"
     :options="{
@@ -109,23 +126,7 @@ export default defineComponent({
         detectRetina: true,
     }"
     />
-    <div id="space-header">
-        <Transition appear name="fade">
-            <h1>HI, UNIVERSE!</h1>
-        </Transition> 
-        <Transition appear name="intro-fade">
-            <span class="roles">
-                <div class="intro">I am Sandhya Veludandi, and a</div>
-            </span>
-        </Transition>
-        <Transition appear name="role-fade">
-            <Carousel :autoplay="2000" :wrap-around="true">
-                <Slide v-for="slide in slides" :key="slide" class="slides">
-                    {{ slide }}
-                </Slide>
-            </Carousel>
-        </Transition>
-    </div> 
+    
 </template>
 
 <style scoped>
@@ -140,18 +141,17 @@ height: 43.1vw;
 width: 100vw; 
 }
 
-#space-header {
+.space-header {
+top: 13vw;
 color: white; 
 position: absolute; 
-width: 70vw; 
-top: 13vw; 
-left: 15vw; 
+display: flex;
+flex-direction: column; 
 text-align: center; 
 font-family: 'Archivo Black', sans-serif; 
-white-space: nowrap; 
 }
 
-#space-header h1 { 
+.space-header h1 { 
 font-size: 6vw; 
 color: #fff; 
 margin-bottom: 1vw;

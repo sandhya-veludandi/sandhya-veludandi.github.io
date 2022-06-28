@@ -109,7 +109,7 @@ export default defineComponent({
         detectRetina: true,
     }"
     />
-    <div id="space-header">
+    <div class="space-header">
         <Transition appear name="fade">
             <h1>HI, UNIVERSE!</h1>
         </Transition> 
@@ -149,21 +149,23 @@ position: static;
 background-color: #111d4A;  
 }
 
-#space-header {
+.space-header {
+top: 20vh;
 color: white; 
 position: absolute; 
-width: 70vw; 
-top: 30vw; 
-left: 9.5vw; 
-text-align: center; 
+display: flex;
+flex-direction: column; 
+text-align: center;
 font-family: 'Archivo Black', sans-serif; 
-white-space: nowrap; 
+width: 100%;
+
 }
 
-#space-header h1 { 
-font-size: 10vw; 
+.space-header h1 { 
+font-size: 5vh;
 color: #fff; 
-margin-bottom: 2vw;
+margin: 1vh;
+padding: 0;
 }
 
 .fade-enter-active,
@@ -207,23 +209,21 @@ margin-bottom: 2vw;
 }
 
 .intro {
-    font-size: 4vw;
-    margin-left: 5.5vw;  
+    font-size: 2.3vh;
     color: #d6dce0;
 }
 
-.slides {
-    font-size: 5vw; 
-    margin-left: 2vw; 
-    width: 100%;
+.slides { 
+    font-size: 3vh;
     color: #C2CAE8;
+    margin-top: 1vh;
+    margin-bottom: 10vh;
 }
 
 .flex-container {
-    margin-left: 9vw;  
-    margin-top: 20vw; 
-    display: flex;
-    justify-content: space-evenly;  
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
 }
 
 a {
@@ -236,8 +236,8 @@ a:visited {
 
 .ov-icon {
     color: #d6dce0; 
-    width: 7vw; 
-    height: 7vw; 
+    width: 4.5vh; 
+    height: 4.5vh;
 }
 
 .ov-icon:hover {
@@ -250,9 +250,7 @@ a:visited {
 }
 
 .nyan {
-    margin-top: 25vw; 
-    margin-left: 14vw;
-    margin-bottom: 10vw; 
+
     cursor: pointer; 
 }
 
