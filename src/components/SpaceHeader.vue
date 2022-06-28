@@ -3,7 +3,6 @@ import { defineComponent } from 'vue'
 import { Carousel, Slide } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 
-
 export default defineComponent({
   components: {
       Carousel,
@@ -12,12 +11,12 @@ export default defineComponent({
   data: () => {
     return {
         slides: {
-            newGrad: "👩🏽‍🎓New Grad!",
-            computerScientist: "💻Computer Scientist",
-            statistician: "📈Statistician",
-            softwareEngineer: "⌨️Software Engineer",
-            webDeveloper: "👩🏽‍💻Web Developer",
-            dataScientist: "📊Data Scientist",
+            dataScientist: "📊 Data Scientist",
+            newGrad: "👩🏽‍🎓 New Graduate !",
+            computerScientist: "💻 Computer Scientist",
+            statistician: "📈 Statistician",
+            softwareEngineer: "⌨️ Software Engineer",
+            webDeveloper: "👩🏽‍💻 Web Developer"
         }
     }
   }
@@ -116,7 +115,7 @@ export default defineComponent({
         </Transition> 
         <Transition appear name="intro-fade">
             <span class="roles">
-                <div class="intro">I'm Sandhya Veludandi, and I'm a</div>
+                <div class="intro">I am Sandhya Veludandi, and a</div>
             </span>
         </Transition>
         <Transition appear name="role-fade">
@@ -135,28 +134,27 @@ display: block;
 }
 
 #particles {
-position: static !important; 
+position: static; 
 background-color: #111d4A;  
-height: 83vh; 
-width: 100%; 
+height: 43.1vw; 
+width: 100vw; 
 }
 
 #space-header {
 color: white; 
 position: absolute; 
-width: 70%; 
-top: 25%; 
-left: 23%; 
-margin-left: -110px; 
+width: 70vw; 
+top: 13vw; 
+left: 15vw; 
 text-align: center; 
 font-family: 'Archivo Black', sans-serif; 
 white-space: nowrap; 
 }
 
 #space-header h1 { 
-font-size: 85px; 
+font-size: 6vw; 
 color: #fff; 
-margin-bottom: 0.2em;
+margin-bottom: 1vw;
 }
 
 .fade-enter-active,
@@ -171,7 +169,7 @@ margin-bottom: 0.2em;
 
 .intro-fade-enter-active,
 .intro-fade-leave-active {
-  transition: opacity 3s ease-in 0.6s;
+  transition: opacity 2s ease-in 1s;
 }
 
 .intro-fade-enter-from,
@@ -181,7 +179,7 @@ margin-bottom: 0.2em;
 
 .role-fade-enter-active,
 .role-fade-leave-active {
-  transition: opacity 1s ease-in 2.2s;
+  transition: opacity 1s ease-in 2s;
 }
 
 .role-fade-enter-from,
@@ -190,11 +188,11 @@ margin-bottom: 0.2em;
 }
 
 .intro {
-    font-size: 1.15em; 
+    font-size: 1.6vw; 
 }
 
 .slides {
-    font-size: 1.5em; 
+    font-size: 2vw; 
 }
 
 

@@ -1,20 +1,63 @@
-<script setup lang="ts">
+import SpaceHeaderVue from "./components/SpaceHeader.vue";
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Mobile from './components/Mobile.vue'
 import SpaceHeader from './components/SpaceHeader.vue'
 import Navbar from './components/Navbar.vue'
 import Sections from './components/Sections.vue'
 import Footer from './components/Footer.vue'
+
+
+export default defineComponent({
+  components: {
+    Mobile,
+    SpaceHeader,
+    Navbar,
+    Sections,
+    Footer
+  },
+  data: () => {
+    return {
+      windowWidth: null,
+      windowHeight: null,
+      isMobile: null
+    }
+  },
+  created() {
+    console.log("created");
+    window.addEventListener('resize', this.checkScreen()); 
+    this.checkScreen();  
+  }, 
+  methods: {
+    checkScreen() {
+      this.windowWidth = window.innerWidth;
+      this.windowHeight = window.innerHeight; 
+      if (this.windowWidth < 740) {
+        this.isMobile = true; 
+        return; 
+      }
+      this.isMobile = false; 
+      return; 
+    }
+  }
+})
+
 </script>
 
 <template>
-  <div id="sticky-name">SANDHYA VELUDANDI</div>
-  <header>
+  <div v-if ="!isMobile" class="sticky-name">SANDHYA VELUDANDI</div>
+  <header v-if="!isMobile">
     <SpaceHeader />
-  </header>  
-  <main>
+  </header>
+  <header v-else>
+    <Mobile />
+  </header>
+  <main v-show="!isMobile">
     <Navbar />
     <Sections />
   </main>
-  <Footer />
+  <div v-show="!isMobile"><Footer /></div>
 </template>
 
 <style>
@@ -23,7 +66,8 @@ import Footer from './components/Footer.vue'
 
 
 body {
-  margin: 0; 
+  margin: 0;
+  padding: 0;
   cursor: default !important;  
   background-color: #111d4A;  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -60,19 +104,21 @@ code {
 
 }
 
-#sticky-name { 
+.sticky-name { 
   position: sticky; 
   top: 0;   
-  padding: 0.15em; 
+  padding: 0.25vw; 
   font-family: 'Montserrat', sans-serif;
-  font-size: 30px; 
+  font-size: 2.5vw; 
   font-weight: 900; 
   color: #111d4A;  
-  letter-spacing: 8px;
+  letter-spacing: 0.7vw;
   text-align: center; 
   background-color: #C2CAE8; 
   z-index: 1; 
   
 }
+
+
 
 </style>

@@ -12,17 +12,17 @@
 <style >
 
 #navbar {
-    top: 2.5em; 
+    top: 3vw; 
 }
 
 .tabs-container {
     position: sticky; 
     border-color:#8380B6; 
-    border-radius: 0.1rem; 
+    border-radius: 0.1vw; 
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 10vh;
+    width: 100vw;
+    height: 5.5vw;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #8789c0;
     z-index: 1;
@@ -34,9 +34,9 @@
     align-items: center;
     flex: 1;
     color:white;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.1vw;
 	transition: all 0.5s ease;
-    font-size: 0.8rem; 
+    font-size: 1vw; 
     cursor: pointer; 
 }
 

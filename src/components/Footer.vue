@@ -67,10 +67,10 @@
     }"
     />
         <div class="flex-container">
-            <a href="tel:3392241910"><v-icon name="fa-phone-square-alt" scale="2"/></a>
-            <a href="mailto:sandhya-veludandi@pm.me"><v-icon name="hi-solid-mail" scale="2"/></a>
-            <a href="https://www.linkedin.com/in/sandhya-veludandi"><v-icon name="io-logo-linkedin" scale="2"/></a>
-            <a href="https://github.com/sandhyaveludandi"><v-icon name="fa-github-square" scale="2"/></a>
+            <a href="tel:3392241910"><v-icon name="fa-phone-square-alt" animation="float"/></a>
+            <a href="mailto:sandhya-veludandi@pm.me"><v-icon name="hi-solid-mail" animation="float"/></a>
+            <a href="https://www.linkedin.com/in/sandhya-veludandi"><v-icon name="io-logo-linkedin" animation="float"/></a>
+            <a href="https://github.com/sandhyaveludandi"><v-icon name="fa-github-square" animation="float"/></a>
         </div>
     </footer>
 </template>
@@ -83,15 +83,16 @@ canvas {
 
 #tsparticles {
 position: absolute; 
-height: 7%;
+height: 3.5vw;
 width: 100%;
 z-index: -1; 
 }
 
 .flex-container {
-    margin-left: 9em; 
-    margin-right: 9em;  
-    padding: 0.45em; 
+    margin-left: 9vw; 
+    margin-right: 9vw;  
+    margin-top: 0.3vw; 
+    padding: 0.45vw; 
     display: flex;
     justify-content: space-evenly;  
 }
@@ -106,6 +107,8 @@ a:visited {
 
 .ov-icon {
     color: white; 
+    width: 3vw; 
+    height: 3vw; 
 }
 
 .ov-icon:hover {
