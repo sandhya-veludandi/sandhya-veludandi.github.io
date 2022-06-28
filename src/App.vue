@@ -25,7 +25,6 @@ export default defineComponent({
     }
   },
   created() {
-    window.addEventListener('resize', this.checkScreen()); 
     this.checkScreen();  
   }, 
   methods: {
