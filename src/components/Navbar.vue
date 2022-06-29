@@ -21,9 +21,7 @@
     border-radius: 0.1vw; 
     display: flex;
     flex-direction: row;
-    width: 100vw;
     height: 5.5vw;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background: #8789c0;
     z-index: 1;
 }

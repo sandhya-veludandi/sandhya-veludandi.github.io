@@ -84,7 +84,6 @@ canvas {
 #tsparticles {
 position: absolute; 
 height: 3.5vw;
-width: 100%;
 z-index: -1; 
 }
 
@@ -98,7 +97,7 @@ z-index: -1;
 }
 
 a {
-    text-decoration: none; 
+text-decoration: none; 
 }
 
 a:visited {

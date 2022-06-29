@@ -137,8 +137,7 @@ display: block;
 #particles {
 position: static; 
 background-color: #111d4A;  
-height: 43.1vw; 
-width: 100vw; 
+height: calc(100vh - 3.25vw - 5.75vw);
 }
 
 .space-header {
@@ -194,6 +193,5 @@ margin-bottom: 1vw;
 .slides {
     font-size: 2vw; 
 }
-
 
 </style>

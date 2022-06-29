@@ -157,8 +157,6 @@ display: flex;
 flex-direction: column; 
 text-align: center;
 font-family: 'Archivo Black', sans-serif; 
-width: 100%;
-
 }
 
 .space-header h1 { 

@@ -60,17 +60,16 @@ export default defineComponent({
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
-
 body {
-  margin: 0;
-  padding: 0;
-  cursor: default !important;  
-  background-color: #111d4A;  
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin: 0;
+padding: 0;
+cursor: default !important;  
+background-color: #111d4A;  
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -103,7 +102,8 @@ code {
 .sticky-name { 
   position: sticky; 
   top: 0;   
-  padding: 0.25vw; 
+  height: 3vw;
+  padding: 0.25vw;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5vw; 
   font-weight: 900; 
@@ -111,8 +111,7 @@ code {
   letter-spacing: 0.7vw;
   text-align: center; 
   background-color: #C2CAE8; 
-  z-index: 1; 
-  
+  z-index: 1;
 }
 
 
