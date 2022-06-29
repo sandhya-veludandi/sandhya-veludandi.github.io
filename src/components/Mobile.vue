@@ -150,7 +150,7 @@ background-color: #111d4A;
 }
 
 .space-header {
-top: 20vh;
+top: 27vh;
 color: white; 
 position: absolute; 
 display: flex;
@@ -162,7 +162,7 @@ width: 100%;
 }
 
 .space-header h1 { 
-font-size: 5vh;
+font-size: 11vw;
 color: #fff; 
 margin: 1vh;
 padding: 0;
@@ -209,12 +209,12 @@ padding: 0;
 }
 
 .intro {
-    font-size: 2.3vh;
+    font-size: 4.5vw;
     color: #d6dce0;
 }
 
 .slides { 
-    font-size: 3vh;
+    font-size: 5vw;
     color: #C2CAE8;
     margin-top: 1vh;
     margin-bottom: 10vh;
@@ -236,8 +236,8 @@ a:visited {
 
 .ov-icon {
     color: #d6dce0; 
-    width: 4.5vh; 
-    height: 4.5vh;
+    width: 7vw; 
+    height: 7vw;
 }
 
 .ov-icon:hover {

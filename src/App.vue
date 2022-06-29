@@ -1,5 +1,3 @@
-import SpaceHeaderVue from "./components/SpaceHeader.vue";
-
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Mobile from './components/Mobile.vue'
