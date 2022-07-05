@@ -12,7 +12,7 @@
 <style >
 
 #navbar {
-    top: 3vw; 
+    top: max(5vh, 3vw); 
 }
 
 .tabs-container {
@@ -21,21 +21,21 @@
     border-radius: 0.1vw; 
     display: flex;
     flex-direction: row;
-    height: 5.5vw;
+    height: max(10vh, 5.5vw);
     background: #8789c0;
     z-index: 1;
 }
 
 .tab {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    color:white;
-    letter-spacing: 0.1vw;
-	transition: all 0.5s ease;
-    font-size: 1vw; 
-    cursor: pointer; 
+display: flex;
+justify-content: center;
+align-items: center;
+flex: 1;
+color:white;
+letter-spacing: 0.1vw;
+transition: all 0.5s ease;
+font-size: max(2.3vh, 1vw); 
+cursor: pointer; 
 }
 
 .tab:hover {

@@ -1,7 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { Carousel, Slide } from 'vue3-carousel';
-import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
   components: {
@@ -137,11 +136,12 @@ display: block;
 #particles {
 position: static; 
 background-color: #111d4A;  
-height: calc(100vh - 3.25vw - 5.75vw);
+height: calc(100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw));
 }
 
 .space-header {
-top: 13vw;
+top: calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/3);
+width: 100%;
 color: white; 
 position: absolute; 
 display: flex;
@@ -151,7 +151,7 @@ font-family: 'Archivo Black', sans-serif;
 }
 
 .space-header h1 { 
-font-size: 6vw; 
+font-size: max(calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/8 - 1em), calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/8)); 
 color: #fff; 
 margin-bottom: 1vw;
 }
@@ -187,11 +187,12 @@ margin-bottom: 1vw;
 }
 
 .intro {
-    font-size: 1.6vw; 
+    font-size: calc((100vh - 3.25vw - 5.75vw)/23); 
 }
 
 .slides {
-    font-size: 2vw; 
+    height: 4vmin;
+    font-size: 4vmin;
 }
 
 </style>

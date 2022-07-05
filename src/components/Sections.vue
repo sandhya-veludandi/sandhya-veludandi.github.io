@@ -4,7 +4,9 @@
 <template>
     <main class="main">
         <section class="slide" id="tab-resume">
-            <iframe src="https://drive.google.com/file/d/1mzODkzTdz_HydMdlZSKzA5iIzLG0nL9U/preview" allow="autoplay"></iframe>
+            <div class="iframe-container">
+                <iframe src="https://drive.google.com/file/d/1mzODkzTdz_HydMdlZSKzA5iIzLG0nL9U/preview" title="Sandhya Veludandi's Resume" frameborder="0" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 </template>
@@ -29,17 +31,15 @@ margin: 0;
 letter-spacing: 1vw;
 }
 
-#tab-resume {
-height: 85vw;
+.iframe-container {
+margin: 4em auto;
+max-width: 50em;
+width: 100%;
 }
-
 iframe {
-margin: 0; 
-padding: 0; 
-border: 0; 
-width: 60vw;  
-height: 75vw; 
-overflow: hidden; 
+  aspect-ratio: 8.5 / 11;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
-
 </style>

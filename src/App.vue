@@ -29,7 +29,7 @@ export default defineComponent({
     checkScreen() {
       this.windowWidth = window.innerWidth;
       this.windowHeight = window.innerHeight; 
-      if (this.windowWidth < 740) {
+      if (this.windowWidth < 700) {
         this.isMobile = true; 
         return; 
       }
@@ -102,15 +102,15 @@ code {
 .sticky-name { 
   position: sticky; 
   top: 0;   
-  height: 3vw;
-  padding: 0.25vw;
+  height: max(5vh, 3vw);
+  padding: 0.25vmin;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2.5vw; 
+  font-size: max(3.8vh, 2.5vw); 
   font-weight: 900; 
   color: #111d4A;  
   letter-spacing: 0.7vw;
   text-align: center; 
-  background-color: #C2CAE8; 
+  background-color: #D1D7ED; 
   z-index: 1;
 }
 

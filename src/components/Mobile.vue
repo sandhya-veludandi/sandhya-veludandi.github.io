@@ -150,13 +150,14 @@ background-color: #111d4A;
 }
 
 .space-header {
-top: 27vh;
+top: 23%;
 color: white; 
 position: absolute; 
 display: flex;
 flex-direction: column; 
 text-align: center;
 font-family: 'Archivo Black', sans-serif; 
+width: 100vw;
 }
 
 .space-header h1 { 
@@ -212,7 +213,7 @@ padding: 0;
 }
 
 .slides { 
-    font-size: 5vw;
+    font-size: 5.5vw;
     color: #C2CAE8;
     margin-top: 1vh;
     margin-bottom: 10vh;
@@ -222,6 +223,7 @@ padding: 0;
     display: flex; 
     justify-content: space-evenly;
     margin-bottom: 10vh;
+    width: 100vw;
 }
 
 a {
@@ -248,8 +250,8 @@ a:visited {
 }
 
 .nyan {
-
     cursor: pointer; 
+    margin-bottom: 3vw;
 }
 
 </style>

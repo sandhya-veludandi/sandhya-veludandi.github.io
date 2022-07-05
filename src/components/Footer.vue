@@ -54,7 +54,7 @@
         }
         },
         background: {
-        color: '#111d4A'
+        color: '#111d4a'
         },
         fullScreen: {
             enable: false
@@ -84,7 +84,8 @@ canvas {
 #tsparticles {
 position: absolute; 
 height: 3.5vw;
-z-index: -1; 
+z-index: -1;
+width: 100%;
 }
 
 .flex-container {
@@ -105,9 +106,9 @@ a:visited {
 }
 
 .ov-icon {
-    color: white; 
-    width: 3vw; 
-    height: 3vw; 
+color: white; 
+width: max(4.5vh, 3vw);
+height: max(4.5vh, 3vw); 
 }
 
 .ov-icon:hover {
