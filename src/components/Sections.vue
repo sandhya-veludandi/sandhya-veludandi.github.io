@@ -5,7 +5,7 @@
     <main class="main">
         <section class="slide" id="tab-resume">
             <div class="iframe-container">
-                <iframe src="https://drive.google.com/file/d/1mzODkzTdz_HydMdlZSKzA5iIzLG0nL9U/preview" title="Sandhya Veludandi's Resume" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://drive.google.com/file/d/1XhOFKgTHO0JtEWqouUSCAfBUnfnHk9yw/preview" title="Sandhya Veludandi's Resume" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
     </main>
