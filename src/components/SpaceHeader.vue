@@ -141,18 +141,18 @@ height: calc(100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw));
 
 .space-header {
 top: calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/3);
-
-width: 100%;
+max-width: 100vw;
 color: white; 
 position: absolute; 
 display: flex;
 flex-direction: column; 
 text-align: center; 
-font-family: 'Archivo Black', sans-serif; 
+font-family: 'Archivo Black', sans-serif;
+word-wrap: break-word;
 }
 
 .space-header h1 { 
-font-size: max(calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/8 - 1em), calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/8)); 
+font-size: 6vmax;
 color: #fff; 
 margin-bottom: 1vw;
 }
@@ -188,11 +188,11 @@ margin-bottom: 1vw;
 }
 
 .intro {
-    font-size: calc((100vh - 3.25vw - 5.75vw)/23); 
+    font-size: 2vmax; 
 }
 
 .slides {
-    height: 4vmin;
+    height: 5vmin;
     font-size: 4vmin;
 }
 
