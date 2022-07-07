@@ -141,6 +141,7 @@ height: calc(100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw));
 
 .space-header {
 top: calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/3);
+
 width: 100%;
 color: white; 
 position: absolute; 

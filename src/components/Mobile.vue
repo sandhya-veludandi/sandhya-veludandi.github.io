@@ -129,9 +129,9 @@ export default defineComponent({
             <div class="flex-container">
                 <a href="tel:3392241910"><v-icon name="fa-phone-square-alt" animation="float"/></a>
                 <a href="mailto:sandhya-veludandi@pm.me"><v-icon name="hi-solid-mail" animation="float"/></a>
-                <a href="https://drive.google.com/file/d/1mzODkzTdz_HydMdlZSKzA5iIzLG0nL9U/preview"><v-icon name="bi-file-earmark-text-fill" animation="float"/></a>
+                <a href="https://drive.google.com/file/d/1XhOFKgTHO0JtEWqouUSCAfBUnfnHk9yw/preview"><v-icon name="bi-file-earmark-text-fill" animation="float"/></a>
                 <a href="https://www.linkedin.com/in/sandhya-veludandi"><v-icon name="io-logo-linkedin" animation="float"/></a>
-                <a href="https://github.com/sandhyaveludandi"><v-icon name="fa-github-square" animation="float"/></a>
+                <a href="https://github.com/sandhya-veludandi"><v-icon name="fa-github-square" animation="float"/></a>
             </div>
         </Transition>
         <a href="https://github.com/zemzot"><img class="nyan" src="./gifs/nyancat-rainbow-cat.gif"/></a>

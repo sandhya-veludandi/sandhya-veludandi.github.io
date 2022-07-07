@@ -29,7 +29,7 @@ export default defineComponent({
     checkScreen() {
       this.windowWidth = window.innerWidth;
       this.windowHeight = window.innerHeight; 
-      if (this.windowWidth < 700) {
+      if (this.windowWidth < 620) {
         this.isMobile = true; 
         return; 
       }
