@@ -152,7 +152,7 @@ word-wrap: break-word;
 }
 
 .space-header h1 { 
-font-size: 6vmax;
+font-size: 11vmin;
 color: #fff; 
 margin-bottom: 1vw;
 }
@@ -188,7 +188,7 @@ margin-bottom: 1vw;
 }
 
 .intro {
-    font-size: 2vmax; 
+    font-size: 3.5vmin; 
 }
 
 .slides {
