@@ -214,7 +214,7 @@ padding: 0;
 
 .slides { 
     font-size: 5.5vw;
-    color: #C2CAE8;
+    color: #EBEDF7;
     margin-top: 1vh;
     margin-bottom: 10vh;
 }
