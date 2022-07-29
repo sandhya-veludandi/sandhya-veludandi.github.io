@@ -5,7 +5,7 @@
         <img
         class="img"
         src="./gifs/wink-slow.gif"
-        alt="loading..."
+        alt="Loading..."
         width="200"
         />
   </div>
