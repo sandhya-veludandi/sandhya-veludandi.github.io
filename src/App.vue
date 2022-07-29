@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Mobile from './components/Mobile.vue'
+import PageLoader from './components/PageLoader.vue'
 import SpaceHeader from './components/SpaceHeader.vue'
 import Navbar from './components/Navbar.vue'
 import Sections from './components/Sections.vue'
@@ -10,6 +11,7 @@ import Footer from './components/Footer.vue'
 export default defineComponent({
   components: {
     Mobile,
+    PageLoader,
     SpaceHeader,
     Navbar,
     Sections,
@@ -19,7 +21,8 @@ export default defineComponent({
     return {
       windowWidth: 0,
       windowHeight: 0,
-      isMobile: false
+      isMobile: false,
+      isLoading: true
     }
   },
   created() {
@@ -36,12 +39,20 @@ export default defineComponent({
       this.isMobile = false; 
       return; 
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 2000);
   }
 })
 
 </script>
 
 <template>
+  <div v-show="!isMobile && isLoading">
+    <PageLoader />
+  </div>
   <div v-if ="!isMobile" class="sticky-name">SANDHYA VELUDANDI</div>
   <header v-if="!isMobile">
     <SpaceHeader />

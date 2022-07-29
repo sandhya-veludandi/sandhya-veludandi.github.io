@@ -13,6 +13,7 @@
     "execa": "^6.1.0",
     "oh-vue-icons": "^1.0.0-rc2",
     "particles.vue3": "^1.41.2",
+    "sass": "^1.54.0",
     "vue": "^3.2.29",
     "vue-scrollto": "^2.20.0",
     "vue3-carousel": "^0.1.40",
