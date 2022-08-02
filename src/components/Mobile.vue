@@ -26,7 +26,7 @@ export default defineComponent({
 
 <template>
     <Particles 
-    id="particles"
+    id="mparticles"
     :options="{
         particles: {
         number: {
@@ -76,7 +76,7 @@ export default defineComponent({
         }
         },
         background: {
-        color: '#111d4A'
+        color: 'black'
         },
         fullScreen: {
             enable: true
@@ -144,9 +144,8 @@ canvas {
 display: block;  
 }
 
-#particles {
-position: static; 
-background-color: #111d4A;  
+#mparticles {
+position: static;   
 }
 
 .space-header {

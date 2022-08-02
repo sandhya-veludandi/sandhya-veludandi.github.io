@@ -43,28 +43,33 @@ export default defineComponent({
   mounted() {
     setTimeout(() => {
       this.isLoading = false;
-    }, 2000);
+    }, 1750);
   }
 })
 
 </script>
 
 <template>
-  <div v-show="!isMobile && isLoading">
+  <div v-show="isLoading">
     <PageLoader />
   </div>
-  <div v-if ="!isMobile" class="sticky-name">SANDHYA VELUDANDI</div>
-  <header v-if="!isMobile">
-    <SpaceHeader />
+  <header v-if="isMobile" v-show="!isLoading">
+      <Mobile />
   </header>
-  <header v-else>
-    <Mobile />
-  </header>
-  <main v-show="!isMobile">
-    <Navbar />
-    <Sections />
-  </main>
-  <div v-show="!isMobile"><Footer /></div>
+  <Transition appear name="real-fade">
+    <div v-if="!isMobile && !isLoading">
+      <div class="sticky-name">SANDHYA VELUDANDI</div>
+      <header>
+        <SpaceHeader />
+      </header>
+      <main>
+        <Navbar />
+        <Sections />
+      </main >
+      <div><Footer /></div>
+    </div>
+  </Transition>
+
 </template>
 
 <style>
@@ -75,7 +80,7 @@ body {
 margin: 0;
 padding: 0;
 cursor: default !important;  
-background-color: #111d4A;  
+background-color: #111d4a;  
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
@@ -119,13 +124,21 @@ code {
   font-family: 'Montserrat', sans-serif;
   font-size: max(3.8vh, 2.5vw); 
   font-weight: 900; 
-  color: #111d4A;  
+  color: #111d4a;  
   letter-spacing: 0.7vw;
   text-align: center; 
   background-color: #D1D7ED; 
   z-index: 1;
 }
 
+.real-fade-enter-active,
+.real-fade-leave-active {
+  transition: opacity 2s ease-in;
+}
 
+.real-fade-enter-from,
+.real-fade-leave-to {
+  opacity: 0;
+}
 
 </style>

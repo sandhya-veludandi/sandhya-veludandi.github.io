@@ -41,104 +41,69 @@ export default defineComponent({
             </Carousel>
         </Transition>
     </div> 
-    <Particles 
-    id="particles"
-    :options="{
-        particles: {
-        number: {
-            density: {
-            enable: false,
-            value_area: 1500,
+        <Particles 
+        id="sparticles"
+        :options="{
+            particles: {
+            number: {
+                density: {
+                enable: false,
+                value_area: 1500,
+                },
+                value: 50,
             },
-            value: 100,
-        },
-        shape: {
-            type: 'star',
-            stroke: {
-            width: 0.8,
-            color: '#45f0df'
-            }
-        },
-        line_linked: {
-            enable: false, 
-            distance: 90, 
-            opacity: 1, 
-            width: 1.5
-        },
-        move: {
-            enable: true,
-            direction: 'right',
-            random: true,
-            straight: true,
-            speed: 0.25,
-            outMode: 'out'      
-        },
-        size: {
-            anim: {
-            speed: 100, 
-            size_min: 0.03
+            shape: {
+                type: 'star',
+                stroke: {
+                width: 0.8,
+                color: '#45f0df'
+                }
             },
-            random: true,
-            value: 1.25,
-        },
-        opacity: {
-            anim: {
-                enable: true,
-                speed: 1.25,
-                opacity_min: 0.3
-            },
-            value: 1,
-            random: true
-        }
-        },
-        background: {
-        color: '#111d4A'
-        },
-        fullScreen: {
-            enable: false
-        },
-        fpsLimit: 60,
-        interactivity: {
-        detectsOn: 'canvas',
-        events: {
-            onHover: {
-            enable: true,
-            mode: 'grab',
-            },
-            onClick: {
-            enable: true,
-            mode: 'push',
-            }
-        },
-        modes: {
-            grab: {
             line_linked: {
-                opacity: 0.85
+                enable: false, 
+                distance: 90, 
+                opacity: 1, 
+                width: 1.5
             },
-            distance: 90
+            move: {
+                enable: true,
+                direction: 'right',
+                random: true,
+                straight: true,
+                speed: 0.25,
+                outMode: 'out'      
             },
-            push: {
-                particles_nb: 1
+            size: {
+                anim: {
+                speed: 100, 
+                size_min: 0.03
+                },
+                random: true,
+                value: 1.25,
+            },
+            opacity: {
+                anim: {
+                    enable: true,
+                    speed: 1.25,
+                    opacity_min: 0.3
+                },
+                value: 1,
+                random: true
             }
-        }
-        },
-        detectRetina: true,
-    }"
-    />
-    
+            },
+            fullScreen: {
+                enable: false
+            },
+            fpsLimit: 60,
+            interactivity: {
+            detectsOn: 'canvas'
+            },
+            detectRetina: true,
+        }"
+        />
 </template>
 
 <style scoped>
-canvas {
-display: block;  
-}
-
-#particles {
-position: static; 
-background-color: #111d4A;  
-height: calc(100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw));
-}
-
 .space-header {
 top: calc((100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw))/3);
 max-width: 100%;
@@ -196,4 +161,8 @@ margin-bottom: 1vw;
     font-size: 4vmin;
 }
 
+#sparticles {
+  position: static;
+  height: calc(100vh - max(5vh, 3vw) - max(10.45vh, 5.5vw));
+}
 </style>

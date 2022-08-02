@@ -53,9 +53,6 @@
             random: true
         }
         },
-        background: {
-        color: '#111d4a'
-        },
         fullScreen: {
             enable: false
         },
